@@ -1,0 +1,2 @@
+Sa xampp htdocs then iparun ( apache MySQL )
+http://localhost/social_app/public/
