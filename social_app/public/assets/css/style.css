@@ -1,0 +1,89 @@
+/* ==========================================================
+   Mini Social - custom styles (on top of Bootstrap 5)
+   ========================================================== */
+:root {
+    --brand-1: #4f6cf0;
+    --brand-2: #7b4fe0;
+}
+
+body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main { flex: 1 0 auto; }
+
+.app-navbar {
+    background: linear-gradient(90deg, var(--brand-1), var(--brand-2));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.app-navbar .nav-link.active { font-weight: 600; }
+
+.brand-icon {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--brand-1);
+    --bs-btn-border-color: var(--brand-1);
+    --bs-btn-hover-bg: #3d58d6;
+    --bs-btn-hover-border-color: #3d58d6;
+    --bs-btn-active-bg: #3449bd;
+    --bs-btn-active-border-color: #3449bd;
+}
+
+a { color: var(--brand-1); }
+
+/* Avatars */
+.avatar { object-fit: cover; background: #dfe3ea; }
+
+/* Posts */
+.post-card { border-radius: .85rem; }
+.post-content { white-space: normal; word-wrap: break-word; overflow-wrap: anywhere; }
+.post-image { max-height: 520px; width: 100%; object-fit: cover; }
+.post-preview { max-height: 260px; }
+
+.like-btn { padding-left: 0; }
+.like-btn:disabled { opacity: .6; }
+
+/* Comments */
+.comments-section { background: #fafbfc; border-bottom-left-radius: .85rem; border-bottom-right-radius: .85rem; }
+.comment-bubble {
+    background: #eef0f4;
+    border-radius: 1rem;
+    padding: .45rem .8rem;
+    display: inline-block;
+    max-width: 100%;
+    min-width: 8rem;
+}
+.comment-text { overflow-wrap: anywhere; font-size: .93rem; }
+.comment-edit-form { min-width: min(100%, 22rem); }
+.comment-actions { padding-left: .8rem; }
+
+/* Profile */
+.profile-cover {
+    height: 130px;
+    background: linear-gradient(120deg, var(--brand-1), var(--brand-2));
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+.profile-header { margin-top: -56px; }
+.profile-avatar { box-shadow: 0 2px 8px rgba(0, 0, 0, .15); }
+
+.min-w-0 { min-width: 0; }
+
+.app-footer { flex-shrink: 0; }
+
+@media (max-width: 575.98px) {
+    main.container { padding-left: .75rem; padding-right: .75rem; }
+    .profile-cover { height: 100px; }
+    .profile-header { margin-top: -48px; }
+    .profile-avatar { width: 96px; height: 96px; }
+}
