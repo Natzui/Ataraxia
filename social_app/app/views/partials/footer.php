@@ -1,7 +1,6 @@
 <footer class="app-footer text-center text-muted small py-4">
     <div class="container">
-        &copy; <?= date('Y') ?> <?= e(config('app_name')) ?> &middot; Mini Social Networking Web Application &middot;
-        Saint Michael College of Caraga
+              2026 Social Space &middot; Saint Michael College of Caraga
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
