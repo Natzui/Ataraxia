@@ -3,7 +3,7 @@
  * Application settings.
  */
 return [
-    'app_name'         => 'Mini Social',
+    'app_name'         => 'Social Space',
     'timezone'         => 'Asia/Manila',   // PHP timezone
     'db_timezone'      => '+08:00',        // must match the PHP timezone above (used for MySQL NOW())
     'posts_per_page'   => 10,
