@@ -1,11 +1,5 @@
 /* ==========================================================
-   Mini Social - client-side behaviour (vanilla JS)
-   - Bootstrap form validation + password match
-   - Image validation + preview
-   - Character counters
-   - Confirm dialogs for delete actions
-   - Inline comment editing
-   - AJAX like button (falls back to a normal form post)
+   Social Space- client-side behaviour
    ========================================================== */
 (function () {
     'use strict';
