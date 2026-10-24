@@ -158,3 +158,23 @@
         });
     }
 })();
+
+/* ---------- Dark mode toggle ---------- */
+(function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) { return; }
+    var icon = btn.querySelector('i');
+
+    function apply(theme) {
+        document.documentElement.setAttribute('data-bs-theme', theme);
+        icon.className = 'bi ' + (theme === 'dark' ? 'bi-sun-fill' : 'bi-moon-stars-fill');
+    }
+
+    apply(document.documentElement.getAttribute('data-bs-theme') || 'light');
+
+    btn.addEventListener('click', function () {
+        var next = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        apply(next);
+    });
+})();
