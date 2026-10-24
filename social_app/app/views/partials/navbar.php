@@ -7,6 +7,13 @@ $route = current_route();
         <a class="navbar-brand fw-bold" href="<?= e(url($me ? 'feed/index' : 'auth/login')) ?>">
             <i class="bi bi-chat-heart-fill me-1"></i><?= e(config('app_name')) ?>
         </a>
+
+        <button type="button" id="themeToggle"
+                class="btn btn-sm btn-outline-light ms-auto me-2 ms-lg-2 me-lg-0 order-lg-last"
+                aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
