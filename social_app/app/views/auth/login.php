@@ -43,6 +43,10 @@
                 <p class="text-center text-muted mt-4 mb-0">
                     New here? <a href="<?= e(url('auth/register')) ?>">Create an account</a>
                 </p>
+                
+                <p class="text-center text-muted small mt-2 mb-0">
+                    Forgot your password? Contact the admin.
+                </p>
             </div>
         </div>
     </div>
