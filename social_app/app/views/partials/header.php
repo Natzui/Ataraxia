@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $title ? e($title) . ' · ' : '' ?><?= e(config('app_name')) ?></title>
-    <link rel="icon" href="data:,">
+    <link rel="icon" type="image/png" href="<?= e(asset('img/logo.png')) ?>">
     <script>
     (function () {
         var t = 'light';
