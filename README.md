@@ -194,8 +194,7 @@ Four tables with foreign keys and `ON DELETE CASCADE`.
 
 ## Author
 
-**Natzui Alyx**
-Saint Michael College of Caraga
+**Natzui Alyx and Stanlye**
 
 ---
 
