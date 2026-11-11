@@ -20,7 +20,7 @@
 
 It was built **without a framework**: the router, base controller, model layer and security helpers are all written by hand to show how MVC, routing and web security work underneath.
 
-> Final output for **Web Systems and Technologies**, Saint Michael College of Caraga.
+> Final output for **Web Systems and Technologies**
 
 ---
 
